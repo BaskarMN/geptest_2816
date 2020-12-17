@@ -1,0 +1,7 @@
+{
+  "name": "geptest",
+  "integrations": {
+    "cordova": {}
+  },
+  "type": "ionic-angular"
+}

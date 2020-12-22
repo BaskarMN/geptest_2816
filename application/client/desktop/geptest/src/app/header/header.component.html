@@ -13,7 +13,15 @@
                                                 <a class="text" *ngIf='userId!=null'  [routerLink]="['/home']">{{'source.home' | i18next}}</a>
                                             </li> <li>
                                                 <a class="text" *ngIf="isApplicable('admin') && userId" [routerLink]="['/admin']">{{'source.admin' | i18next}}</a>
-                                            </li> <li>
+                                            </li>
+<li>
+                                <a href="#gepfeat" *ngIf='userId' data-toggle="collapse" aria-expanded="false" class="dropdown-toggle text">gepfeat</a>
+                                <ul class="collapse list-unstyled" id="gepfeat">
+<li>
+                                        <a class="text" *ngIf='userId' [routerLink]="['/screen213399']">{{'source.screen213399' | i18next}}</a>
+                                    </li>
+</ul>
+                                </li> <li>
                                                 <a class="text" *ngIf='userId!=null' (click)="logout()">{{'source.logout' | i18next}}</a>
                                             </li>
  <li>

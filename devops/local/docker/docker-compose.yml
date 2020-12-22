@@ -78,7 +78,7 @@ services:
     image: gepfeat-2816
     container_name: gepfeat-2816
     ports: 
-      - 8006:8006
+      - 8007:8007
     env_file: .env
     depends_on:
       - mongo
